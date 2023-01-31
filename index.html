@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <title>CV de Carlos Centurión</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!--Este es el Menú del Encabezado-->
+    <div class="contenedor-encabezado">
+        <header>
+            <div class="logo">
+                <a href="#">CARLOS CENTURION</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#quiensoy" onclick="seleccionar()">QUIEN SOY</a></li>
+                    <li><a href="#habilidades" onclick="seleccionar()">HABILIDADES</a></li>
+                    <li><a href="#curriculum" onclick="seleccionar()">MI CV</a></li>
+                    <li><a href="#expectativas" onclick="seleccionar()">EXPECTATIVAS</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+        </header>
+    </div>
+
+    <!-- Esta es la sección de inicio-->
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <div class="contenedor-img">
+                <img src=https://i.pinimg.com/originals/2a/af/b6/2aafb637fc776e1272b9f114ccaf5d41.jpg
+                       alt="foto de Carlos Centurion">
+            </div>
+            <h1>CARLOS CENTURION</h1>
+            <h2>Estudiante de Html, Css, Javascript</h2>
+            <div class="redes">
+                <a href="#"><i class="fa-brands fa-facebook"></i> </a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-skype"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Esta es la sección quien soy-->
+    <section id="quiensoy" class="quiensoy">
+        <div class="contenido-seccion">
+            <h2>¿QUIEN SOY?</h2>
+            <p><span>Mi Nombre es Carlos Centurión.</span>Soy una persona apasionada por adquirir día a día nuevos
+                conocimientos y habilidades en el ámbito del desarrollo web, así mismo dispongo de la capacidad para 
+                realizar tareas en grupo, teniendo una personalidad proactiva, organizada, comunicativa, empática y por sobre todo enfocada a la resolución de problemas.<br>
+                Me gustaría poder tener la posibilidad de trabajar en el algún proyecto tecnológico para ir sumando
+                experiencia y también aplicar todo lo aprendido tanto en forma autodidacta como en cursos realizados
+                con anterioridad.
+            </p>
+            <div class="fila">
+                <!-- datos personales-->
+                <div class="columna">
+                     <h3>Datos Personales</h3>
+                   <ul>
+                        <li>
+                            <strong>Lugar y Fecha de Nacimiento</strong>
+                            Buenos Aires 15/03/88
+                        </li>
+                               
+                        <li>
+                            <strong>Nacionalidad</strong>
+                            Argentina
+                        </li>
+                        <li>
+                            <strong>Domicilio</strong>
+                            Av Cabildo 12345 CABA
+                        </li>
+                        <li>
+                            <strong>Teléfono</strong>
+                            3567-675485
+                        </li>
+
+                        <li>
+                            <strong>Email</strong>
+                            Carlos@cmc.com
+                        </li>
+                        <li>
+                            <strong>Website</strong>
+                            www.cmc.com
+                        </li>
+                        <li>
+                            <strong>Ocupación</strong>
+                            <span>Estudiante en Argentina Programa 4.0</span>
+                        </li>
+                    </ul>
+                </div>
+            
+                 <!-- intereses -->
+                <div class="columna">
+                    <h3>intereses</h3>
+                    <div class="contenedor-intereses">
+                    <div class="interes">
+                        <i class="fa-solid fa-computer"></i>
+                        <span>WEBSITE</span>
+                    </div>
+                    <div class="interes">
+                        <i class="fa-solid fa-book-open-reader"></i>
+                        <span>LECTURA</span>
+                    </div>
+                    <div class="interes">
+                        <i class="fa-solid fa-shirt"></i>
+                        <span>RUGBY</span>
+                    </div>
+                    <div class="interes">
+                        <i class="fa-regular fa-futbol"></i>
+                        <span>FUTBOL</span>
+                    </div>
+                    <div class="interes">
+                            <i class="fa-solid fa-plane-departure"></i>
+                            <span>VIAJES</span>
+                    </div>
+                    <div class="interes">
+                            <i class="fa-solid fa-music"></i>
+                            <span>MUSICA</span>
+                    </div>
+                    <div class="interes">
+                            <i class="fa-solid fa-car"></i>
+                            <span>AUTOS</span>
+                    </div>
+                    <div class="interes">
+                            <i class="fa-solid fa-chess"></i>
+                            <span>AJEDREZ</span>
+                    </div>
+                </div>
+            </div>
+            </div>
+            <button>
+                DESCARGAR CV <i class="fa-solid fa-download"></i>
+                <span class="overlay"></span>
+            </button>
+        </div>
+
+
+    </section>
+
+    <!--Esta es la sección Habilidades-->
+    <section id="habilidades" class="habilidades">
+        <div class="contenido-seccion">
+            <h2>Habilidades</h2>
+            <div class="fila">
+               
+                <!--conocimientos-->
+                <div class="columna">
+                    <h3>Conocimientos</h3>
+                    <div class="conocimientos">
+                        <span>Geografía</span>
+                        <div class="barra-habilidades">
+                            <div class="progreso">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="conocimientos">
+                        <span>Historia</span>
+                        <div class="barra-habilidades">
+                            <div class="progreso">
+                                <span>85%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="conocimientos">
+                        <span>Finanzas</span>
+                        <div class="barra-habilidades">
+                            <div class="progreso">
+                                <span>65%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="conocimientos">
+                        <span>Inglés</span>
+                        <div class="barra-habilidades">
+                            <div class="progreso">
+                                <span>85%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="conocimientos">
+                        <span>Html Css Javascript</span>
+                        <div class="barra-habilidades">
+                            <div class="progreso">
+                                <span>25%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--habilidades blandas-->
+                <div class="columna">
+                    <h3>Habilidades Blandas</h3>
+                    <div class="conocimientos">
+                        <span>Trabajo en Equipo</span>
+                        <div class="barra-habilidades">
+                            <div class="progreso">
+                                <span>65%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="conocimientos">
+                        <span>Comunicación Efectiva</span>
+                        <div class="barra-habilidades">
+                            <div class="progreso">
+                                <span>95%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="conocimientos">
+                        <span>Empatía</span>
+                        <div class="barra-habilidades">
+                            <div class="progreso">
+                                <span>85%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="conocimientos">
+                        <span>Resolución de Problemas</span>
+                        <div class="barra-habilidades">
+                            <div class="progreso">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="conocimientos">
+                        <span>Adaptación a Nuevas Propuestas</span>
+                        <div class="barra-habilidades">
+                            <div class="progreso">
+                                <span>70%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Esta es la seccion mi cv-->
+    <section id="curriculum" class="curriculum">
+        <div class="contenido-seccion">
+            <h2>Mi CV</h2>
+            <div class="fila">
+                <div class="col izquierda">
+                    <h3>Educación</h3>
+                    <div class="item izq">
+                        <h4>Licenciatura en Turismo</h4>
+                        <span class="casa">Universidad del Salvador</span>
+                        <span class="fecha">Años 2007 - 2011</span>
+                        <p>Adquirí sólidas bases de Historia y Geografía que me han servido para desarrollarme como guía de turismo</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Título Secundario Humanístico</h4>
+                        <span class="casa">Instituto Juan XXIII</span>
+                        <span class="fecha">Años 2001-2005</span>
+                        <p>Finalicé mis estudios secundarios con una orientación en humanidades</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>First Certificated of English</h4>
+                        <span class="casa">Universidad de Cambridge</span>
+                        <span class="fecha">Julio/2003</span>
+                        <p>validé mis conocimientos mediante un exámen en la Universidad de Cambridge</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                </div>
+                    <div class="col derecha">
+                        <h3>Experiencia Laboral</h3>
+                    <div class="item der">
+                        <h4>Guía de Turismo</h4>
+                        <span class="casa">Freelance</span>
+                        <span class="fecha">2013 - 2020</span>
+                        <p>emprendimiento propio en Misiones donde
+                        llevaba a cabo visitas guiadas</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Guía de Turismo</h4>
+                        <span class="casa">Cementerio de la Recoleta</span>
+                        <span class="fecha">Años 2009 - 2013</span>
+                        <p>comencé a trabajar como guía de turismo en el Cementerio de la Recoleta</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Anfitrión Turístico</h4>
+                        <span class="casa">Manuel Tienda León</span>
+                        <span class="fecha">Años 2008 - 2009</span>
+                        <p>Pasaba a buscar a los turistas extranjeros al aeropuerto de Ezeiza y Aeroparque</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>    
+                </div>
+            </div>
+        </div>
+    
+    
+    
+    </section>
+
+    <!--Esta es la sección Expectativas-->
+    <section id="expectativas" class="expectativas">
+        <div class="contenido-seccion">
+            <h2>MIS EXPECTATIVAS LABORALES</h2>
+            <p><span>Mis Expectativas Laborales:</span>Después de haber trabajado durante muchos años en el rubro turístico
+            y haber vivido en la Ciudad de Posadas (Misiones), donde tuve la suerte de poder emprender mi propio negocio de 
+            manera independiente, hasta que lamentablemente en el año 2020 llegó la pandemia de Covid-19, y a todo el mundo
+            nos cambió la vida de una manera radical, por las restricciones a los desplazamientos de personas a nivel global,
+            y comenzó a acelerarse una etapa de digitalización e informatización de tareas básicas de nuestra cotidianidad, a
+            tal punto que podemos realizar compras por la web, utilizar el homebanking, buscar información sobre algún tema  
+            específico, que sólo era patrimonio de las bibliotecas y hasta comunicarnos con un ser querido o familiar que está a miles 
+            de kilómetros de distancia con simplemente descargar una aplicación en nuestra computadora o celular que nos acerca de
+            una manera tan necesaria como impensada no hace muchas décadas atrás.</br>
+            Hoy estoy formandome con los cursos de <span>Argentina Programa 4.0</span> front end en este caso y la verdad que he descubierto
+            en la programación una profesión apasionante e interesante que es muy requerida en el planeta entero debido a la escasez
+            de profesionales en la industria para poder cubrir los puestos vacantes que día a día se van abriendo por la fuerte demanda
+            insatisfecha del sector. Ni hablar de la Argentina que también tiene un déficit de talentos en el área de las compañías tecnológicas.</br>
+            Dicho todo esto sería muy bueno para mí poder reconvertirme laboralmente y poder seguir aprendiendo informática y con el 
+            paso del tiempo ir adquieriendo experiencia para conseguir un trabajo ya sea en una empresa o trabajar de forma independiente
+            o freelance. Por lo pronto seguiré tomando cursos de capacitación, hasta que llegue ése ansiado día de poder obtener mi primer empleo en programación.  
+            </p>
+             
+        </div>
+    </section>
+
+    <!--Esta es la sección Contacto-->
+    <section id="contacto" class="contacto">
+        <div class="contenido-seccion">
+            <h2>CONTACTO</h2>
+            <div class="fila">
+                <!--formulario-->
+                <div class="columna">
+                    <input type="text" placeholder="Tu Nombre">
+                    <input type="text" placeholder="Teléfono">
+                    <input type="text" placeholder="Correo electrónico">
+                    <input type="text" placeholder="Tema">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                    <button>
+                        Enviar Mensaje<i class="fa-sharp fa-solid fa-pen-clip"></i>
+                        <span class="overlay"></span>
+                    </button>
+                </div>
+                <!--Mapa-->
+                <div class="columna">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3285.3535138858174!2d-58.44189671907197!3d-34.569920558615706!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sar!4v1675099469577!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <div class="info">
+                        <ul>
+                            <li>
+                                <i class="fa-solid fa-location-pin"></i>
+                                Av Cabildo 12345, CABA
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-phone"></i>
+                                Teléfono: 3895-786950
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-envelope-circle-check"></i>
+                                Email: carlos@cmc.com
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Este es el footer-->
+    <footer>
+        <a href="inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="redes">
+            <a href="#"><i class="fa-brands fa-facebook"></i> </a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-skype"></i></a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+
+
+</body> 
+</html>
+
+
+              

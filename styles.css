@@ -1,0 +1,834 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Work+Sans:wght@100;300;400;600;800&display=swap');
+*{
+    box-sizing: border-box;
+    font-family: 'Work Sans';
+    margin:0 ;
+    padding:0 ;
+
+}
+
+html{
+    scroll-behavior: smooth;
+
+}
+
+/* Vamos a darle estilo al menu */
+.contenedor-encabezado{
+    background-color: black;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 99;
+
+}
+
+.contenedor-encabezado header{
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+}
+
+.contenedor-encabezado header .logo a{
+    font-family:'righteous' ;
+    font-size: 36px;
+    color: tomato;
+    text-decoration: none;
+
+}
+.contenedor-encabezado header ul{
+    display: flex;
+    list-style: none;
+}
+
+.contenedor-encabezado header nav ul li a{
+    text-align: none ;
+    color:azure;
+    margin:0 15px ;
+    padding: 3px;
+    transition: .5s;
+    text-decoration:none ;
+
+}
+
+.contenedor-encabezado header nav ul li a:hover{
+    color:tomato;
+}
+
+.nav-responsive{
+    background-color: tomato;
+    color: azure;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none;
+
+}
+
+/* vamos a modelar la sección inicio */
+
+.inicio{
+    background:linear-gradient(to top,rgba(30,35,38,.8),rgba(30,35,38,1)),
+    url(https://thumbs.dreamstime.com/b/oficina-moderna-11584208.jpg);
+    background-size: cover;
+    height: 100vh;
+    color: tomato;
+    display: flex;
+    align-items: center;
+    
+
+}
+ /* vamos a modelar la foto*/
+
+.inicio .contenido-banner{
+    padding: 20px; 
+    background-color: black;
+    max-width: 350px;
+    margin: auto;
+    text-align: center;
+    border-radius: 40px;
+
+}
+
+.inicio .contenido-banner img{
+    margin-top: 40px;
+    border:10px solid tomato;
+    display: block;
+    width: 80%;
+    margin: auto;
+    border-radius:100%;
+
+}
+
+.inicio .contenido-banner h1{
+    margin-top: 40px;
+    font-size: 42px;
+    font-family: 'Righteous';
+
+}
+
+.inicio .contenido-banner h2{
+    font-size: 15px;
+    font-weight:normal;
+}
+
+/* vamos a modelar los links de las redes sociales*/
+
+.inicio .contenido-banner .redes a{
+    color: azure;
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid azure;
+    border-radius: 100%;
+    width: 42px;
+    height: 42px;
+    line-height: 42px;
+    margin: 40x 5px;
+    font-size:20px;
+    transition: .3s;
+
+
+}
+/* le ponemos color a los iconos de las redes al pasar el cursor por sobre los mismos*/
+
+.inicio .contenido-banner .redes a:hover{
+    background-color:tomato ;
+
+}
+
+
+/* vamos a dar estilo a la sección quien soy */
+
+.quiensoy{
+    background-color:#1e2326;
+    color:azure;
+    padding: 50px 20px;
+    text-align: justify;
+}
+
+.quiensoy .contenido-seccion{
+    max-width: 1100px;
+    margin: auto;
+}
+
+.quiensoy h2{
+    font-size: 48px;
+    font-family:'Righteous';
+    text-align: center;
+    padding: 20px 0;
+}
+
+.quiensoy .contenido-seccion p{
+    font: 18px;
+    line-height: 22px;
+    margin-bottom: 20px;
+}
+
+.quiensoy .contenido-seccion p span{
+    color:tomato ;
+    font-weight: bold;
+}
+
+.quiensoy .fila{
+    display: flex;
+}
+
+.quiensoy .fila .columna{
+    width: 50%;
+}
+
+.quiensoy .fila .columna h3{
+    font-size: 28px;
+    font-family: 'Righteous';
+    margin-bottom: 25px;
+}
+
+.quiensoy .fila .columna ul{
+    list-style: none;
+}
+
+.quiensoy .fila .columna ul li{
+    margin: 12px 0;
+}
+
+.quiensoy .fila .columna ul li strong{
+    display: inline-block;
+    color: tomato;
+    width: 130px;
+}
+
+.quiensoy .fila .columna ul li span{
+    background-color:tomato ;
+    padding: 3px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.quiensoy .fila .columna .contenedor-intereses{
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.quiensoy .fila .columna .contenedor-intereses .interes{
+    width: 100px;
+    height: 100px;
+    background-color: #252A2E;
+    border-radius: 10px;
+    margin: 0 15px 15px 0; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: 3s;
+
+}
+
+.quiensoy .fila .columna .contenedor-intereses .interes:hover{
+    background-color: tomato;
+
+}
+
+.quiensoy .fila .columna .contenedor-intereses .interes i{
+    font-size: 30px;
+    margin-bottom: 10px;
+
+}
+
+.quiensoy button{
+    cursor: pointer;
+    background-color: transparent;
+    border: 2px solid azure;
+    width: fit-content;
+    display: block;
+    margin: 20px auto;
+    padding: 10px 22px;
+    font-size: 16px;
+    color: azure;
+    position: relative;
+    z-index: 10;
+}
+
+.quiensoy button .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: tomato;
+    z-index: -1;
+    transition: 1s;
+
+}
+
+.quiensoy button:hover .overlay{
+    width: 100%;
+
+}
+
+/* sección habilidades */
+
+.habilidades{
+    background-color:#252A2E;
+    color:azure;
+    padding: 50px 20px;
+}
+
+.habilidades .contenido-seccion{
+    max-width: 1100px;
+    margin: auto;
+}
+
+.habilidades h2{
+    font-size: 48px;
+    font-family:'Righteous';
+    text-align: center;
+    padding: 20px 0;
+}
+
+.habilidades .fila{
+    display: flex;
+}
+
+.habilidades .fila .columna{
+    width: 50%;
+    padding: 0 20px;
+}
+
+.habilidades .fila .columna h3{
+    font-size: 28px;
+    font-family: 'Righteous';
+    margin-bottom: 25px;
+}
+
+.habilidades .conocimientos > span{
+    font-weight: bold;
+    display: block;
+    margin-bottom: 10px;
+
+}
+
+.habilidades .conocimientos .barra-habilidades{
+    height: 8px;
+    width: 80%;
+    background-color: black;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.habilidades .conocimientos .progreso{
+    background-color: tomato;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 8px;
+}
+
+.habilidades .conocimientos .barra-habilidades span{
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    background-color: tomato;
+    border-radius: 50px;
+    line-height: 40px;
+    text-align: center;
+    top: -17px;
+    right: -15px;
+    font-size: 14px;
+
+
+}
+
+.habilidades .conocimientos .geografia{
+    width: 0%;
+    animation: 2s geografia forwards;
+
+}
+@keyframes geografia {
+    0%{width: 0%;}
+    100%{width: 80%;}
+    
+}
+
+.habilidades .conocimientos .historia{
+    width: 0%;
+    animation: 2s historia forwards;
+
+}
+@keyframes historia {                                 
+    0%{width: 0%;}
+    100%{width: 85%;}
+}
+
+.habilidades .conocimientos .finanzas{
+    width: 0%;
+    animation: 2s finanzas forwards;
+
+}
+@keyframes finanzas {
+    0%{width: 0%;}
+    100%{width: 65%;}
+}
+.habilidades .conocimientos .ingles{
+    width: 0%;
+    animation: 2s ingles forwards;
+
+}
+@keyframes ingles {
+    0%{width: 0%;}
+    100%{width: 85%;}
+}
+
+.habilidades .conocimientos .html-css-javascript{
+    width: 0%;
+    animation: 2s html-css-javascript forwards;
+
+}
+@keyframes html-css-javascript {
+    0%{width: 0%;}
+    100%{width: 25%;}
+}
+
+.habilidades .conocimientos .trabajo-en-equipo{
+    width: 0%;
+    animation: 2s trabajo-en-equipo forwards;
+
+}
+@keyframes trabajo-en-equipo {
+    0%{width: 0%;}
+    100%{width: 65%;}
+}
+
+.habilidades .conocimientos .comunicacion-efectiva{
+    width: 0%;
+    animation: 2s comunicacion-efectiva forwards;
+
+}
+@keyframes comunicacion-efectiva {
+    0%{width: 0%;}
+    100%{width: 95%;}
+}
+
+
+.habilidades .conocimientos .empatia{
+    width: 0%;
+    animation: 2s empatia forwards;
+
+}
+@keyframes empatia {
+    0%{width: 0%;}
+    100%{width: 85%;}
+}
+
+.habilidades .conocimientos .resolucion-de-problemas{
+    width: 0%;
+    animation: 2s resolucion-de-problemas forwards;
+
+}
+@keyframes resolucion-de-problemas {
+    0%{width: 0%;}
+    100%{width: 80%;}
+}
+
+.habilidades .conocimientos .adaptacion{
+    width: 0%;
+    animation: 2s adaptacion forwards;
+
+}
+@keyframes adaptacion {
+    0%{width: 0%;}
+    100%{width: 70%;}
+}
+
+/* sección Mi CV */
+
+.curriculum{
+    background-color:#1e2326;
+    color:azure;
+    padding: 50px 20px;
+}
+
+.curriculum .contenido-seccion{
+    max-width: 1100px;
+    margin: auto;
+}
+
+.curriculum h2{
+    font-size: 48px;
+    font-family:'Righteous';
+    text-align: center;
+    padding: 20px 0;
+}
+
+.curriculum .fila{
+    display: flex;
+    justify-content: space-between;
+}
+
+.curriculum .fila .col{
+    width: 49%;
+    padding: 0 20px;
+}
+
+
+
+.curriculum .fila .col h3{
+    font-size: 28px;
+    font-family: 'Righteous';
+    margin-bottom: 25px;
+
+}
+
+.curriculum .fila .izquierda{
+    border-right:2px solid #252A2E ;
+}
+
+.curriculum .fila .derecha{
+    border-left:2px solid #252A2E ;
+}
+
+.curriculum .fila .item{
+    padding: 25px;
+    margin-bottom: 30px;
+    background-color: #252A2E;
+    position: relative;
+}
+
+
+
+.curriculum .fila .item h4{
+    font-size:18px ;
+    margin-bottom: 10px ;
+}
+
+
+
+.curriculum .fila .item .casa{
+    color: tomato;
+    font-size: 20px;
+    font-weight: bold;
+    display: block;
+}
+
+
+.curriculum .fila .item .fecha{
+    display: block;
+    color: tomato;
+    margin-bottom: 10px;
+}
+
+
+.curriculum .fila .item p{
+    line-height: 24px;
+    
+}
+
+
+.curriculum .fila .izq{
+    border-right: 2px solid tomato;
+    margin-right: 20px;
+    
+}
+
+.curriculum .fila .der{
+    border-left: 2px solid tomato;
+    margin-left: 20px;
+    
+}
+
+
+.curriculum .fila .item .conectori{
+    height: 2px;
+    background-color: tomato;
+    width: 47px;
+    position: absolute;
+    top:50%;
+    right: -47px;
+    z-index: 5;
+}
+
+.curriculum .fila .item .conectori .circuloi{
+    display: block;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color: tomato;
+    float: right;
+    position: relative;
+    bottom: 4px;
+
+}
+
+.curriculum .fila .item .conectord{
+    height: 2px;
+    background-color: tomato;
+    width: 47px;
+    position: absolute;
+    top:50%;
+    left:-47px;
+    z-index: 5;
+}
+
+.curriculum .fila .item .conectord .circulod{
+    display: block;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color: tomato;
+    float: left;
+    position: relative;
+    bottom: 4px;
+
+}
+
+/* sección Expectativas */
+
+.expectativas{
+    background-color:#1e2326;
+    color:azure;
+    padding: 50px 20px;
+    text-align: justify;
+}
+
+.expectativas .contenido-seccion{
+    max-width: 1100px;
+    margin: auto;
+    
+}
+
+.expectativas h2{
+    font-size: 48px;
+    font-family:'Righteous';
+    text-align: center;
+    padding: 20px 0;
+}
+
+.expectativas .contenido-seccion p{
+    font: 18px;
+    line-height: 22px;
+    margin-bottom: 20px;
+}
+
+.expectativas .contenido-seccion p span{
+    color:tomato ;
+    font-weight: bold;
+}
+
+/* Esta es la sección Contacto*/
+
+.contacto{
+    background-color: #1e2326;
+    color: azure;
+    padding: 50px 0;
+}
+
+.contacto .contenido-seccion{
+    max-width: 1100px;
+    margin: auto;
+}
+
+.contacto h2{
+    font-size: 48px;
+    font-family:'Righteous';
+    text-align: center;
+    padding: 20px 0;
+
+}
+
+.contacto .fila{
+    display: flex;
+}
+
+.contacto .columna{
+    width: 50%;
+    padding: 10px;
+    position: relative;
+}
+
+.contacto .columna input, .contacto .columna textarea{
+    display: block;
+    width: 100%;
+    padding: 18px;
+    border: none;
+    margin-bottom: 20px;
+    background-color: #252A2E;
+    color: azure;
+    font-size: 18px;
+
+}
+
+.contacto button{
+    cursor: pointer;
+    background-color: transparent;
+    border: 2px solid azure;
+    width: fit-content;
+    display: block;
+    margin: 20px auto;
+    padding: 10px 22px;
+    font-size: 16px;
+    color: azure;
+    position: relative;
+    z-index: 10;
+
+}
+
+.contacto button .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: tomato;
+    z-index: -1;
+    transition: 1s;
+}
+
+.contacto button:hover .overlay{
+    width: 100%;
+}
+
+.contacto .columna iframe{
+    width: 100%;
+}
+
+.contacto .columna .info{
+    position: absolute;
+    top: 40%;
+    background-color: #252A2E;
+    padding: 20px;
+    max-width: 350px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+.contacto .columna .info ul{
+    list-style: none;
+}
+
+.contacto .columna .info ul li{
+    margin-bottom: 20px;
+}
+
+.contacto .columna .info ul li i{
+    color: tomato;
+    display: inline-block;
+    margin-right: 20px;
+    
+}
+
+/* footer*/
+
+footer{
+    background-color: #252A2E;
+    color: azure;
+    padding: 50px 0 30px 0;
+    text-align: center;
+    position: relative;
+    width: 100%;
+}
+
+footer .redes{
+    margin-bottom: 20px;
+}
+
+footer .redes a{
+    color: azure;
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid azure;
+    border-radius: 100%;
+    width: 42px;
+    height: 42px;
+    line-height: 42px;
+    margin: 40x 5px;
+    font-size:20px;
+    transition: .3s;
+
+}
+
+footer .arriba{
+    display: block;
+    width: 50px;
+    height: 50px;
+    background-color: tomato;
+    color: azure;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -25px;
+    border-radius: 50%;
+    line-height: 50px;
+    font-size:  18px; 
+}
+
+/* seccion navegación responsive */
+@media screen and (max-width: 980px){
+    nav{
+        display: none;
+
+    }
+    .nav-responsive{
+        display: block;
+    }
+    nav.responive{
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 75px;
+        background-color: #252A2E;
+        width: 180px;
+    }
+    nav.responsive ul{
+        display: block !important;
+    }
+    nav.responsive ul li{
+        border-bottom: 1px solid azure;
+        padding: 10px 0;
+
+    }
+}
+
+@media screen and (max-width:700px){
+    .quiensoy .fila{
+        display: block;
+    }
+    .quiensoy .fila .columna{
+        width: fit-content;
+    }
+
+    .habilidades .fila{
+        display: block;
+    }
+    .habilidades .fila .columna{
+        width: 100%;
+    }
+    .habilidades .fila .columna .barra-habilidades{
+        width:100% ;
+
+    }
+
+    .curriculum .fila{
+        display: block;
+
+    }
+    .curriculum .fila .col{
+        width: 90%;
+    }
+    .curriculum .fila .der{
+        margin-left: 20px;
+
+    }
+    .expectativas .contenido-seccion{
+        display: block;
+    }
+    .contacto .fila{
+        display: block;
+    }
+    .contacto .fila .columna{
+        width: 100%;
+    }
+}
